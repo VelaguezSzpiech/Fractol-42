@@ -6,7 +6,7 @@
 /*   By: vszpiech <vszpiech@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 17:52:18 by vszpiech          #+#    #+#             */
-/*   Updated: 2024/08/16 13:48:23 by vszpiech         ###   ########.fr       */
+/*   Updated: 2024/08/16 16:38:56 by vszpiech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	ft_handle_errors(int ac, char **av, t_fractol *f)
 		ft_msg(f);
 		exit(EXIT_FAILURE);
 	}
-	else if (ft_strncmp(av[1], "mandelbrot", ft_strlen(av[1]) + 1) == 0)
+	else if (ft_strncmp(av[1], "mandelbrot", ft_strlen(av[1]) + 1) == 0 && ac < 3)
 		f->set = MANDELBROT;
-	else if (ft_strncmp(av[1], "julia", ft_strlen(av[1]) + 1) == 0)
+	else if (ft_strncmp(av[1], "julia", ft_strlen(av[1]) + 1) == 0 && ac < 5)
 	{
 		f->set = JULIA;
 		ft_julia(av, ac, f);
