@@ -6,10 +6,9 @@
 /*   By: vszpiech <vszpiech@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 17:52:18 by vszpiech          #+#    #+#             */
-/*   Updated: 2024/08/14 16:15:28 by vszpiech         ###   ########.fr       */
+/*   Updated: 2024/08/16 13:48:23 by vszpiech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/fractol.h"
 
@@ -41,7 +40,7 @@ void	ft_msg(t_fractol *f)
 void	ft_msg_julia(t_fractol *f)
 {
 	ft_printf("Please enter starting values between -2.0 and 2.0\n");
-	ft_printf("Try something like : ./fractol julia 0.285 0.013 or 0.687 0.312\n");
+	ft_printf("Try something like : ./fractol julia 0.285 0.013\n");
 	ft_exit(EXIT_FAILURE, f);
 }
 

@@ -6,41 +6,13 @@
 /*   By: vszpiech <vszpiech@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 17:52:23 by vszpiech          #+#    #+#             */
-/*   Updated: 2024/08/14 15:52:47 by vszpiech         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:14:06 by vszpiech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "../include/fractol.h"
 
-void	ft_switch_color(t_fractol *f)
-{
-	if (f->space == 0)
-		f->color = WHITE;
-	else if (f->space == 1)
-		f->color = BLACK;
-	else if (f->space == 2)
-		f->color = CYAN;
-	else if (f->space == 3)
-		f->color = BLUE;
-	else if (f->space == 4)
-		f->color = NAVY;
-	else if (f->space == 5)
-		f->color = GREEN;
-	else if (f->space == 6)
-		f->color = YELLOW;
-	else if (f->space == 7)
-		f->color = ORANGE;
-	else if (f->space == 8)
-		f->color = RED;
-	else if (f->space == 9)
-		f->color = PINK;
-	else if (f->space == 10)
-	{
-		f->color = PURPLE;
-		f->space = -1;
-	}
-}
+
 
 int	ft_key_events(int keycode, t_fractol *f)
 {
@@ -61,7 +33,6 @@ int	ft_key_events(int keycode, t_fractol *f)
 	else if (keycode == SPACE)
 	{
 		f->space++;
-		ft_switch_color(f);
 	}
 	ft_render(f);
 	return (0);

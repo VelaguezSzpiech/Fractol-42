@@ -6,7 +6,7 @@
 /*   By: vszpiech <vszpiech@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 18:00:06 by livsauze          #+#    #+#             */
-/*   Updated: 2024/08/14 15:47:24 by vszpiech         ###   ########.fr       */
+/*   Updated: 2024/08/16 14:13:49 by vszpiech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_clean_init(t_fractol *f)
 	f->set = 0;
 	f->escape_val = 4;
 	f->iter = 42;
-	f->color = WHITE;
+	f->color = 0xFFFFFF;
 	f->space = 0;
 	f->julia_x = 0.0;
 	f->julia_y = 0.0;
